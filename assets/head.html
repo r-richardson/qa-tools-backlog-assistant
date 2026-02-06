@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlog Status</title>
+    <meta property="og:title" content="WORKFLOW_NAME" />
+    <meta property="og:url" content="https://github.com/GITHUB_REPOSITORY" />
+    <meta http-equiv="refresh" content="600">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --opensuse-green: #73ba25;
+            --opensuse-dark-blue: #173f4f;
+            --opensuse-light-blue: #35b9ab;
+            --status-color: STATUS_COLOR; /* Replaced by workflow */
+            --bg-color: #f0f2f5;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--opensuse-dark-blue);
+            color: white;
+            padding: 1rem 0;
+            border-bottom: 5px solid var(--status-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* openSUSE Chameleon Icon (SVG simplified) - optional or use text */
+        
+        a {
+            color: var(--opensuse-light-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--opensuse-green);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        /* Card-like styling for content */
+        .content-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Markdown Content Styling */
+        h1 {
+            color: var(--opensuse-dark-blue);
+            border-bottom: 2px solid var(--opensuse-green);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        h2, h3 {
+            color: var(--opensuse-dark-blue);
+            margin-top: 1.5rem;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 1rem;
+            background-color: white;
+        }
+
+        th {
+            background-color: var(--opensuse-green);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+            transition: background-color 0.2s;
+        }
+        
+        /* Status Column Alignment */
+        th:last-child, td:last-child {
+            text-align: center;
+        }
+
+        /* Responsive Table */
+        @media (max-width: 768px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .content-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="brand">QA Tools</span>
+        </div>
+    </header>
+    <main class="container">
+        <div class="content-card">
