@@ -2,6 +2,46 @@ api: https://progress.opensuse.org/issues.json
 web: https://progress.opensuse.org/issues
 team: QE Tools
 url: https://progress.opensuse.org/projects/qa/wiki/Tools
+apps:
+  - name: OSD
+    url: https://openqa.suse.de
+  - name: o3
+    url: https://openqa.opensuse.org
+  - name: Progress
+    url: https://progress.opensuse.org
+  - name: Github
+    url: https://github.com/notifications
+    icon: https://cdn.jsdelivr.net/gh/PapirusDevelopmentTeam/papirus_icons//src/apps_github.svg
+  - name: Gitlab
+    url: https://gitlab.suse.de/dashboard/todos
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gitlab.svg
+  - name: Gitea
+    url: https://src.suse.de/
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gitea.svg
+  - name: Netbox
+    url: https://netbox.suse.de
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/netbox-dark.svg
+  - name: Grafana
+    url: https://monitor.qa.suse.de/d/s52RapOGk/home?orgId=1&from=now-6M&to=now&timezone=browser
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/grafana.svg
+  - name: Zabbix
+    url: https://zabbix.suse.de/
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zabbix.svg
+  - name: Jenkins
+    url: http://jenkins.qa.suse.de/
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/jenkins.svg
+  - name: WorkAdventure
+    url: https://play.workadventu.re/@/suse/suse-office/space-station-office
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/workadventure.png
+  - name: Jitsi
+    url: https://meet.opensuse.org/
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/jitsi.svg
+  - name: Slack
+    url: https://suse.slack.com/
+    icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/slack.svg
+  - name: Okta
+    url: https://suse.okta.com/
+    icon: https://cdn.jsdelivr.net/gh/PapirusDevelopmentTeam/papirus_icons//src/apps_okta_verify.svg
 queries:
   - title: Combined Backlog (dev+infra)
     query: query_id=230
