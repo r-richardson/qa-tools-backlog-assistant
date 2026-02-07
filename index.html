@@ -144,14 +144,21 @@
   <div class="container">
     <a class="navbar-brand" href="#">Backlog Status</a>
     <span class="navbar-text">
-       Updated: <span id="last-updated"></span>
+       Latest Run: 2026-02-07 02:28:20 UTC
     </span>
   </div>
 </nav>
 
 <div class="container">
-<main><h3 id="qe-tools-dashboard">QE Tools Dashboard</h3>
-<p>This is the dashboard for <a href="https://progress.opensuse.org/projects/qa/wiki/Tools">QE Tools</a>.</p>
+<main><h3 id="qe-toolshttpsprogressopensuseorgprojectsqawikitools-dashboard"><a href="https://progress.opensuse.org/projects/qa/wiki/Tools">QE Tools</a> Dashboard</h3>
+
+<h4 id="attention-required">⚠️ Attention Required</h4>
+<div class="table-responsive">
+<table class="table table-hover">
+<thead><tr><th>Backlog Query</th><th>Number of Issues</th><th>Limits</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><a href="https://progress.opensuse.org/issues?query_id=576&amp;project_id=115">Untriaged QA</a></td><td>1</td><td>&lt;1</td><td><i class="bi bi-x-circle-fill status-fail"></i></td></tr>
+</tbody></table></div>
 
 <div class="app-grid">
 
@@ -174,9 +181,7 @@
         
 </div>
 
-<p><strong>Latest Run:</strong> 2026-02-07 02:24:56 UTC
-<em>(Please refresh to see latest results)</em></p>
-
+<h4 id="passing-checks">✅ Passing Checks</h4>
 <div class="table-responsive">
 <table class="table table-hover">
 <thead><tr><th>Backlog Query</th><th>Number of Issues</th><th>Limits</th><th>Status</th></tr></thead>
@@ -188,7 +193,6 @@
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=1192">Workable Dev Backlog</a></td><td>10</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=1195">Workable Infra Backlog</a></td><td>8</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=514">Exceeding Due Date</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=576&amp;project_id=115">Untriaged QA</a></td><td>1</td><td>&lt;1</td><td><i class="bi bi-x-circle-fill status-fail"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=481">Untriaged Tools Tagged</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=542">SLA immediate (&lt;1 day)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=543">SLA urgent (&lt;1 week)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
@@ -202,6 +206,7 @@
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=520">In Feedback</a></td><td>5</td><td>&lt;11</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 <tr><td><a href="https://progress.opensuse.org/issues?query_id=773">Closed yesterday</a></td><td>5</td><td></td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 </tbody></table></div>
+
 </main>
 </div>
 
@@ -213,11 +218,6 @@
         </p>
     </div>
 </footer>
-
-<script>
-    // Simple script to set the update time if not provided by server
-    document.getElementById('last-updated').textContent = new Date().toUTCString();
-</script>
 
 </body>
 </html>
