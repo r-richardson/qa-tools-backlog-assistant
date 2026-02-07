@@ -114,6 +114,10 @@
             border-bottom: none;
         }
 
+        .clickable-row {
+            cursor: pointer;
+        }
+
         a {
             color: var(--opensuse-blue);
             text-decoration: none;
@@ -144,7 +148,7 @@
   <div class="container">
     <a class="navbar-brand" href="#">Backlog Status</a>
     <span class="navbar-text">
-       Latest Run: 2026-02-07 04:15:45 UTC
+       Latest Run: 2026-02-07 05:04:53 UTC
     </span>
   </div>
 </nav>
@@ -157,7 +161,7 @@
 <table class="table table-hover">
 <thead><tr><th>Backlog Query</th><th>Number of Issues</th><th>Limits</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=576&amp;project_id=115">Untriaged QA</a></td><td>1</td><td>&lt;1</td><td><i class="bi bi-x-circle-fill status-fail"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=576&amp;project_id=115"><td><a href="https://progress.opensuse.org/issues?query_id=576&amp;project_id=115">Untriaged QA</a></td><td>1</td><td>&lt;1</td><td><i class="bi bi-x-circle-fill status-fail"></i></td></tr>
 </tbody></table></div>
 
 <div class="app-grid">
@@ -186,25 +190,25 @@
 <table class="table table-hover">
 <thead><tr><th>Backlog Query</th><th>Number of Issues</th><th>Limits</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=230">Combined Backlog (dev+infra)</a></td><td>94</td><td>&lt;101</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=754">Dev Backlog</a></td><td>44</td><td>&lt;51</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=757">Infra Backlog</a></td><td>50</td><td>&lt;51</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=794">Next</a></td><td>56</td><td>&lt;65</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=1192">Workable Dev Backlog</a></td><td>10</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=1195">Workable Infra Backlog</a></td><td>8</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=514">Exceeding Due Date</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=481">Untriaged Tools Tagged</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=542">SLA immediate (&lt;1 day)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=543">SLA urgent (&lt;1 week)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=544">SLA high (&lt;1 month)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=545">SLA normal (&lt;1 year)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=821">SLA no imm/urg blocked</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=824">SLO urgent (&lt;1 day)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=827">SLO high (&lt;1 week)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=830">SLO normal (&lt;1 month)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=505">In Progress</a></td><td>8</td><td>&lt;11, &gt;0</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=520">In Feedback</a></td><td>5</td><td>&lt;11</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
-<tr><td><a href="https://progress.opensuse.org/issues?query_id=773">Closed yesterday</a></td><td>5</td><td></td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=230"><td><a href="https://progress.opensuse.org/issues?query_id=230">Combined Backlog (dev+infra)</a></td><td>94</td><td>&lt;101</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=754"><td><a href="https://progress.opensuse.org/issues?query_id=754">Dev Backlog</a></td><td>44</td><td>&lt;51</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=757"><td><a href="https://progress.opensuse.org/issues?query_id=757">Infra Backlog</a></td><td>50</td><td>&lt;51</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=794"><td><a href="https://progress.opensuse.org/issues?query_id=794">Next</a></td><td>56</td><td>&lt;65</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=1192"><td><a href="https://progress.opensuse.org/issues?query_id=1192">Workable Dev Backlog</a></td><td>10</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=1195"><td><a href="https://progress.opensuse.org/issues?query_id=1195">Workable Infra Backlog</a></td><td>8</td><td>&lt;21, &gt;5</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=514"><td><a href="https://progress.opensuse.org/issues?query_id=514">Exceeding Due Date</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=481"><td><a href="https://progress.opensuse.org/issues?query_id=481">Untriaged Tools Tagged</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=542"><td><a href="https://progress.opensuse.org/issues?query_id=542">SLA immediate (&lt;1 day)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=543"><td><a href="https://progress.opensuse.org/issues?query_id=543">SLA urgent (&lt;1 week)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=544"><td><a href="https://progress.opensuse.org/issues?query_id=544">SLA high (&lt;1 month)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=545"><td><a href="https://progress.opensuse.org/issues?query_id=545">SLA normal (&lt;1 year)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=821"><td><a href="https://progress.opensuse.org/issues?query_id=821">SLA no imm/urg blocked</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=824"><td><a href="https://progress.opensuse.org/issues?query_id=824">SLO urgent (&lt;1 day)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=827"><td><a href="https://progress.opensuse.org/issues?query_id=827">SLO high (&lt;1 week)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=830"><td><a href="https://progress.opensuse.org/issues?query_id=830">SLO normal (&lt;1 month)</a></td><td>0</td><td>&lt;1</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=505"><td><a href="https://progress.opensuse.org/issues?query_id=505">In Progress</a></td><td>8</td><td>&lt;11, &gt;0</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=520"><td><a href="https://progress.opensuse.org/issues?query_id=520">In Feedback</a></td><td>5</td><td>&lt;11</td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
+<tr class="clickable-row" data-href="https://progress.opensuse.org/issues?query_id=773"><td><a href="https://progress.opensuse.org/issues?query_id=773">Closed yesterday</a></td><td>5</td><td></td><td><i class="bi bi-check-circle-fill status-pass"></i></td></tr>
 </tbody></table></div>
 
 </main>
@@ -218,6 +222,23 @@
         </p>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const rows = document.querySelectorAll('.clickable-row');
+        rows.forEach(row => {
+            row.addEventListener('click', function(e) {
+                // Don't trigger if a link was clicked directly
+                if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+                    const url = this.getAttribute('data-href');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
