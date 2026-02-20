@@ -1,1 +1,1 @@
-{"bad_queries": {"Workable Infra Backlog": {"url": "https://progress.opensuse.org/issues?query_id=1195", "issue_count": 5, "limits": "<21, >5"}, "In Progress": {"url": "https://progress.opensuse.org/issues?query_id=505", "issue_count": 12, "limits": "<11, >0"}}, "updated": "2026-02-20T12:02:15.866843"}
+{"bad_queries": {"In Progress": {"url": "https://progress.opensuse.org/issues?query_id=505", "issue_count": 11, "limits": "<11, >0"}}, "updated": "2026-02-20T13:21:05.376580"}
