@@ -1,1 +1,1 @@
-{"bad_queries": {"In Progress": {"url": "https://progress.opensuse.org/issues?query_id=505", "issue_count": 11, "limits": "<11, >0"}}, "updated": "2026-03-03T09:32:49.722193"}
+{"bad_queries": {"Exceeding Due Date": {"url": "https://progress.opensuse.org/issues?query_id=514", "issue_count": 1, "limits": "<1"}, "In Progress": {"url": "https://progress.opensuse.org/issues?query_id=505", "issue_count": 11, "limits": "<11, >0"}}, "updated": "2026-03-03T10:09:15.011888"}
