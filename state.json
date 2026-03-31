@@ -1,1 +1,1 @@
-{"bad_queries": {"Workable Infra Backlog": {"url": "https://progress.opensuse.org/issues?query_id=1195", "issue_count": 4, "limits": "<21, >5"}}, "updated": "2026-03-31T21:28:08.340012"}
+{"bad_queries": {"Workable Infra Backlog": {"url": "https://progress.opensuse.org/issues?query_id=1195", "issue_count": 4, "limits": "<21, >5"}, "SLO high (<1 week)": {"url": "https://progress.opensuse.org/issues?query_id=827", "issue_count": 1, "limits": "<1"}}, "updated": "2026-03-31T22:01:44.070334"}
