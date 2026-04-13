@@ -1,1 +1,1 @@
-{"bad_queries": {"Exceeding Due Date": {"url": "https://progress.opensuse.org/issues?query_id=514", "issue_count": 1, "limits": "<1"}, "SLO high (<1 week)": {"url": "https://progress.opensuse.org/issues?query_id=827", "issue_count": 1, "limits": "<1"}}, "updated": "2026-04-13T08:19:11.858876"}
+{"bad_queries": {"Workable Dev Backlog": {"url": "https://progress.opensuse.org/issues?query_id=1192", "issue_count": 5, "limits": "<21, >5"}}, "updated": "2026-04-13T10:08:25.067278"}
