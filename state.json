@@ -1,1 +1,1 @@
-{"bad_queries": {"In Progress": {"url": "https://progress.opensuse.org/issues?query_id=505", "issue_count": 11, "limits": "<11, >0"}}, "updated": "2026-07-31T12:11:57.632837"}
+{"bad_queries": {"Untriaged QA": {"url": "https://progress.opensuse.org/issues?query_id=576&project_id=115", "issue_count": 2, "limits": "<1"}}, "updated": "2026-07-31T14:35:42.308012"}
