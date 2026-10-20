@@ -1,1 +1,1 @@
-{"bad_queries": {"SLO high (<1 week)": {"url": "https://progress.opensuse.org/issues?query_id=827", "issue_count": 3, "limits": "<1"}}, "updated": "2026-10-20T15:42:26.956387"}
+{"bad_queries": {"Infra Backlog": {"url": "https://progress.opensuse.org/issues?query_id=757", "issue_count": 51, "limits": "<51"}}, "updated": "2026-10-20T19:37:09.264303"}
