@@ -1,0 +1,60 @@
+name: Ticket Alert Reminders
+
+on:
+  schedule:
+    # Run every Monday and Thursday at 07:30 UTC
+    - cron: '0 8 * * 4'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (print reminder to logs without posting to Slack)'
+        type: boolean
+        required: true
+        default: true
+      target_weekday:
+        description: 'Target weekday forecast'
+        type: choice
+        options:
+          - monday
+          - tuesday
+          - wednesday
+          - thursday
+          - friday
+        default: monday
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Ticket Alert Reminders
+        env:
+          REDMINE_API_KEY: ${{ secrets.REDMINE_API_KEY }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          SLACK_USER_MAPPING: ${{ vars.SLACK_USER_MAPPING }}
+        run: |
+          ARGS=""
+
+          # Handle manual dispatch arguments
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.dry_run }}" = "true" ]; then
+              ARGS="$ARGS --dry-run"
+            fi
+            if [ -n "${{ inputs.target_weekday }}" ]; then
+              ARGS="$ARGS --target-weekday ${{ inputs.target_weekday }}"
+            fi
+          fi
+
+          python reminders/generate_reminders.py $ARGS

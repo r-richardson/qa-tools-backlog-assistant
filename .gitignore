@@ -1,2 +1,6 @@
 /index.md
 /tasks/
+
+__pycache__/
+*.pyc
+slack_mapping.json
